@@ -1,8 +1,10 @@
 define([
+  'module',
   'jquery',
   'module1',
   'module2'
 ], function(
+  module,
   $,
   module1,
   module2
@@ -14,6 +16,12 @@ define([
 
     var loadTime = window.performance.timing.domContentLoadedEventEnd-window.performance.timing.navigationStart;
 
-    $('#mainContent').html('Hello World! Page load time is <strong>' + loadTime + 'ms</strong>');
+    $('#mainContent').html(`
+      <h1>Hello World!</h1>
+      <br />
+      <h2>Page load time is ${loadTime}ms</h2>
+      <br />
+      <h2>Your current locale is ${module.config().locale}</h2>
+      `);
   };
 });
