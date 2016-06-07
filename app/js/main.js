@@ -5,9 +5,7 @@ require.config({
     'module1': 'feature/module1',
     'module2': 'feature/module2',
     'app': 'feature/app'
-  },
-  urlArgs: 'version=' + (new Date()).getTime(),
-  waithSeconds: 15
+  }
 });
 
 require(['app'], function(app) {
