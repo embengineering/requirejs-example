@@ -1,9 +1,9 @@
-# requirejs-example
-An example of RequireJS and its optimizer tool. Included you can find two examples for *Single JS File Optimization* and *Full Project Optimization*.
+# RequireJS Examples
+An example of RequireJS and its optimizer tool. Included you can find two examples for **Single JS File Optimization** and **Full Project Optimization**.
 
 ## Test Single JS File Optimization
 
-* Run `npm run single-file` for the *non-optimized* version
+* Run `npm run single-file` for the **non-optimized** version
 * Run `npm run single-file-optimized` for the *optimized* version
 
 ## Test Full Project Optimization
