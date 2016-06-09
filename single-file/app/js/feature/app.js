@@ -1,23 +1,26 @@
 define([
   'module',
   'jquery',
-  'module1',
-  'module2'
+  'one',
+  'two',
+  'three'
 ], function(
   module,
   $,
-  module1,
-  module2
+  one,
+  two,
+  three
 ) {
   return function() {
-    module1();
-    module2();
+    one();
+    two();
+    three();
     console.log('App loaded!');
 
     var loadTime = window.performance.timing.domContentLoadedEventEnd-window.performance.timing.navigationStart;
 
     $('#mainContent').html(`
-      <h1>Hello World!</h1>
+      <h1>Single JS File (Example)</h1>
       <br />
       <h2>Page load time is ${loadTime}ms</h2>
       <br />

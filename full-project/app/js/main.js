@@ -2,8 +2,9 @@ require.config({
   baseUrl: '/js',
   paths: {
     'jquery': 'vendor/jquery-2.2.4.min',
-    'module1': 'feature/module1',
-    'module2': 'feature/module2',
+    'one': 'feature/one',
+    'two': 'feature/two',
+    'three': 'feature/three',
     'app': 'feature/app'
   }
 });
